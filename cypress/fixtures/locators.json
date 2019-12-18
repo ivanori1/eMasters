@@ -1,5 +1,19 @@
 {
   "logo": "[href='/']",
   "cardContainer": ".CardContainer-dZIidR",
-  "cardName": ".CardName-jBpmex"
+  "cardName": ".CardName-jBpmex",
+  "menuIcon": ".Menu-csMRbe",
+  //SIGN IN POP-UP
+  "signUpButton": ".Row-guwMhk.cKdUvX > button:nth-of-type(2)",
+  "signInUsername": ".Container-ebnDAW.eYuMOi > div:nth-of-type(2)",
+  "usernameError": "div:nth-of-type(2) > .Error-gFHCcI.jxQtKi", 
+  "signInEmail": ".Container-ebnDAW.eYuMOi > div:nth-of-type(3)",
+  "emailError": "div:nth-of-type(3) > .Error-gFHCcI.jxQtKi",
+  "signInPassword": ".Container-ebnDAW.eYuMOi > div:nth-of-type(4)",
+  "passwordError": "div:nth-of-type(3) > .Error-gFHCcI.jxQtKi",
+  "signInRepeat": ".Container-ebnDAW.eYuMOi > div:nth-of-type(5)",
+  "repeatError": "div:nth-of-type(5) > .Error-gFHCcI.jxQtKi"
+
+  
+
 }

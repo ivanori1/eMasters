@@ -35,3 +35,12 @@ Cypress.Commands.add("assertCardContainer", () => {
     });
   });
 });
+
+Cypress.Commands.add("clickMenu", () => {
+  cy.fixture("locators").as("locatorFixture");
+  cy.get("@locatorFixture").then(locator => {
+    cy.get(locator.menuIcon).click();
+    cy.get(locator.signUpButton).click();
+  });
+});
+

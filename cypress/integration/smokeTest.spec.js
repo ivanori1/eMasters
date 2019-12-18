@@ -1,5 +1,6 @@
 describe("Smoke Test", () => {
   before(() => {
+    
     // it is only call visti '/' because default url is set in cypres.json
     cy.visit("/");
   });
@@ -12,4 +13,12 @@ describe("Smoke Test", () => {
       cy.assertCardContainer();
     })
   });
+  context("Sign in", ()=> {
+    it("Click on menu icon", () => {
+      cy.clickMenu();
+    })
+    it("Sign up", ()=> {
+
+    })
+  })
 });
