@@ -8,6 +8,8 @@
 Command for verifiying every element visiblity in home-page
  method get CSS (from fixture/locators.json) and should assert it is visible
 */
+const lists = require("./../fixtures/lists");
+
 //Assert that home page contains logo
 Cypress.Commands.add("assertHomePageLoaded", () => {
   cy.fixture("locators").as("locatorFixture");
@@ -20,15 +22,8 @@ Cypress.Commands.add("assertHomePageLoaded", () => {
 Cypress.Commands.add("assertCardContainer", () => {
   cy.fixture("locators").as("locatorFixture");
   cy.get("@locatorFixture").then(locator => {
-    var list = [
-      "Dota 2",
-      "Fifa 2019",
-      "Rainbow Six Siege",
-      "Underlords",
-      "Teamfight Tactics",
-      "Chess Rush"
-    ];
-    list.forEach(function(element) {
+    let listGame = lists.listOfGames;
+    listGame.forEach(function(element) {
       cy.get(locator.cardContainer).within(function() {
         cy.get(locator.cardName).contains(element);
       });
@@ -44,3 +39,16 @@ Cypress.Commands.add("clickMenu", () => {
   });
 });
 
+
+Cypress.Commands.add("negativeSignUpTest", () => {
+  cy.fixture("locators").as("locatorFixture");
+  cy.get("@locatorFixture").then(locator => {
+    cy.get(locator.confirmSignUpButton).click();
+    let listError = lists.listOfErrors;
+    listError.forEach(function(element) {
+      cy.get(locator.signUpContainer).within(function() {
+        cy.get(locator.signUpInputErrors).contains(element);
+      });
+    });
+  });
+});

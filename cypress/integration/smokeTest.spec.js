@@ -13,11 +13,12 @@ describe("Smoke Test", () => {
       cy.assertCardContainer();
     })
   });
-  context("Sign in", ()=> {
+  context("Sign Up", ()=> {
     it("Click on menu icon", () => {
       cy.clickMenu();
     })
-    it("Sign up", ()=> {
+    it("Sign up ", ()=> {
+      cy.negativeSignUpTest();
 
     })
   })
