@@ -3,7 +3,7 @@
   "cardContainer": ".CardContainer-dZIidR",
   "cardName": ".CardName-jBpmex",
   "menuIcon": ".Menu-csMRbe",
-  //SIGN IN POP-UP
+  "_comment" : "//SIGN IN POP-UP",
   "signUpButton": ".Row-guwMhk.cKdUvX > button:nth-of-type(2)",
   "signInUsername": ".Container-ebnDAW.eYuMOi > div:nth-of-type(2)",
   "usernameError": "div:nth-of-type(2) > .Error-gFHCcI.jxQtKi", 
