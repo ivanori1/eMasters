@@ -16,7 +16,7 @@ Cypress.Commands.add("assertHomePageLoaded", () => {
   });
 });
 
-//This loop works for testing of tours. Need to make code prettier and to put a list into separate fixture JSON file and integrate here
+//This loop works for testing of games Container. Need to make code prettier and to put a list into separate fixture JSON file and integrate here
 Cypress.Commands.add("assertCardContainer", () => {
   cy.fixture("locators").as("locatorFixture");
   cy.get("@locatorFixture").then(locator => {
