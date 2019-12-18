@@ -1,0 +1,26 @@
+{
+  "name": "emasters",
+  "version": "1.0.0",
+  "description": "Smoke test of eMasters aplication and integration with Circle CI",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivanori1/eMasters.git"
+  },
+  "keywords": [
+    "Cypress",
+    "eMasters"
+  ],
+  "author": "Ivan Coric & Nikola Klipa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivanori1/eMasters/issues"
+  },
+  "homepage": "https://github.com/ivanori1/eMasters#readme",
+  "dependencies": {
+    "cypress": "^3.8.0"
+  }
+}
