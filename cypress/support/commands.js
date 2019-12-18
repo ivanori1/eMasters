@@ -28,10 +28,10 @@ Cypress.Commands.add("assertCardContainer", () => {
       "Teamfight Tactics",
       "Chess Rush"
     ];
-
     list.forEach(function(element) {
-      cy.get(locator.cardContainer).should("be.visible");
-      cy.get(locator.cardName).contains(element);
+      cy.get(locator.cardContainer).within(function() {
+        cy.get(locator.cardName).contains(element);
+      });
     });
   });
 });

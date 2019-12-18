@@ -8,7 +8,7 @@ describe("Smoke Test", () => {
     it("Assert home page is loaded", () => {
       cy.assertHomePageLoaded();
     });
-    it("Assert Game Card Container is visible with list of games", () => {
+    it("Assert Game Card Container is visible and  within list of games", () => {
       cy.assertCardContainer();
     })
   });
