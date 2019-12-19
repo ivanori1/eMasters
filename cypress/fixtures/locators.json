@@ -10,8 +10,9 @@
   "signUpInputErrors" : ".Error-gFHCcI",
   "confirmSignUpButton": ".SignUpButton-hBaORF",
   
-  "username": "[placeholder='Your Email or Username']",
+  "username": ".ControlledInput-gOXpPn.bmbdta.form-control",
   "loginButton": ".LoginButton-iLoVXl.iklklM",
-  "password": "[placeholder='Your password']",
-  "chessRushCard": ".CardDiv-fAqGUG.khgysM > a:nth-of-type(7)"
+  "password": ".ControlledInput-gOXpPn.bmbdta.form-control",
+  "chessRushCard": ".CardDiv-fAqGUG.khgysM > a:nth-of-type(7)",
+  "loginAvatar": ".Avatar-kMBfmL.jCqtZg"
 }

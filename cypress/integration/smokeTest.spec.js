@@ -26,6 +26,11 @@ describe("Smoke Test", () => {
     it("Login", () => {
       cy.positiveSignUp();
     })
+  })
 
-    })
-});
+//   context("ChessRushGame", ()=> {
+//     it("ChessRush", () => {
+//       cy.chessRush();
+//     })
+//   })
+ });

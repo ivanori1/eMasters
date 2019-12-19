@@ -62,5 +62,15 @@ Cypress.Commands.add("positiveSignUp", () => {
     cy.get(locator.loginButton).click();
     cy.get(locator.password).type('Mihajlo1');
     cy.get(locator.loginButton).click();
+    cy.wait(5);
+    cy.get(locator.loginAvatar).should('be.visible');
   });
 });
+
+// Cypress.Commands.add("chessRush", () => {
+//   cy.fixture("locators").as("locatorFixture");
+//   cy.get("@locatorFixture").then(locator => {
+//     cy.wait(15);
+//     cy.get(locator.chessRushCard).click();
+//   });
+// });
