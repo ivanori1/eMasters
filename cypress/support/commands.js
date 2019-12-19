@@ -52,3 +52,15 @@ Cypress.Commands.add("negativeSignUpTest", () => {
     });
   });
 });
+
+
+Cypress.Commands.add("positiveSignUp", () => {
+  cy.fixture("locators").as("locatorFixture");
+  cy.get("@locatorFixture").then(locator => {
+    cy.get(locator.loginTab).click();
+    cy.get(locator.username).type('klipan');
+    cy.get(locator.loginButton).click();
+    cy.get(locator.password).type('Mihajlo1');
+    cy.get(locator.loginButton).click();
+  });
+});

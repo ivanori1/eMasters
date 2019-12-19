@@ -21,5 +21,11 @@ describe("Smoke Test", () => {
       cy.negativeSignUpTest();
 
     })
-  })
+  });
+  context("Sign Up Positive", ()=> {
+    it("Login", () => {
+      cy.positiveSignUp();
+    })
+
+    })
 });

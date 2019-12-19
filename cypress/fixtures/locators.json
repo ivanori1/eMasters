@@ -4,10 +4,14 @@
   "cardName": ".CardName-jBpmex",
   "menuIcon": ".Menu-csMRbe",
   
+  "loginTab": ".Row-guwMhk.cKdUvX > button:nth-of-type(1)",
   "signUpButton": ".Row-guwMhk.cKdUvX > button:nth-of-type(2)",
   "signUpContainer": ".Container-ebnDAW",
   "signUpInputErrors" : ".Error-gFHCcI",
   "confirmSignUpButton": ".SignUpButton-hBaORF",
   
+  "username": "[placeholder='Your Email or Username']",
+  "loginButton": ".LoginButton-iLoVXl.iklklM",
+  "password": "[placeholder='Your password']",
   "chessRushCard": ".CardDiv-fAqGUG.khgysM > a:nth-of-type(7)"
 }
