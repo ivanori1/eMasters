@@ -3,9 +3,11 @@
   "cardContainer": ".CardContainer-dZIidR",
   "cardName": ".CardName-jBpmex",
   "menuIcon": ".Menu-csMRbe",
-
+  
   "signUpButton": ".Row-guwMhk.cKdUvX > button:nth-of-type(2)",
   "signUpContainer": ".Container-ebnDAW",
   "signUpInputErrors" : ".Error-gFHCcI",
-  "confirmSignUpButton": ".SignUpButton-hBaORF"
+  "confirmSignUpButton": ".SignUpButton-hBaORF",
+  
+  "chessRushCard": ".CardDiv-fAqGUG.khgysM > a:nth-of-type(7)"
 }
