@@ -1,5 +1,6 @@
 const listOfGames = [
   "Dota 2",
+  "League of Legends",
   "Fifa 2019",
   "Rainbow Six Siege",
   "Underlords",
